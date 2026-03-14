@@ -2,7 +2,7 @@
 
 # English
 
-On my mechanics course, it's usual to find myself struggle imagining the motion of complex systems. As students learning physics they always want to figure out how the systems behave, but that not easy for most of us and most of systems.
+On my mechanics course, it's usual to find myself struggle imagining the motion of complex systems. As students learn physics they always want to figure out how the systems behave, but that not easy for most of us and most of systems.
 
  How can computer help with this? I told myself it worths a try.
 
