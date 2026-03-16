@@ -5,7 +5,7 @@ import numpy as np
 
 class Basic:
     def __init__(self, title = "Basic GUI"):
-        '''Basic GUI with a menu bar and a canvas'''
+        """Basic GUI with a menu bar and a canvas"""
         self.root = tk.Tk()
         self.frame = tk.Frame(self.root)
         # Set the title and icon of the window
@@ -19,7 +19,7 @@ class Basic:
         self.root.mainloop()
 
 class Canvas(tk.Canvas):
-    '''TODO: Should insert pyplot in the canvas.'''
+    """TODO: Should insert pyplot in the canvas."""
     def __init__(self, master, width=400, height=400):
         super().__init__(master, width=width, height=height)
         self.pack()

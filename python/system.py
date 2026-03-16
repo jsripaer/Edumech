@@ -1,6 +1,15 @@
 import numpy as np 
 from math import sin, cos, pi
 from . import signal
+from dataclasses import dataclass
+
+@dataclass
+class ParticleTrail:
+    position: np.ndarray[float]
+    mass: float
+    velocity: np.ndarray[float]
+    acceleration: np.ndarray[float]
+    color: str | tuple[float, float, float]
 
 class Field(np.matrix):
     """Class of fields, for example, gravity field, electric field, magnetic field, etc.
