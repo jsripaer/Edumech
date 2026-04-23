@@ -107,4 +107,18 @@ class System:
         self.acceleration = (self.acceleration - acc_c) * r_mat + acc_c
         return signal.Update()
 
+    def knetic_energy(self):
+        E_k = 0.5 * self.mass * np.sum(self.velocity**2, axis=1)
+        return E_k
+
+    def momentum(self):
+        p = self.mass * self.velocity
+        return p
+    
+    def moment_interia(self):
+        _, _, p_c = self.find_centre()
+        r_p = self.position - p_c
+        r_p = np.sum(r_p**2, axis=1)# r ^ 2
+        I = np.sum(r_p * self.mass)
+        return I
 

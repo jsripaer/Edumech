@@ -22,7 +22,7 @@ class RigidBody(System):
         # Centre rotation
         self._rotation(dt)
         # Accelerate update
-        
+        self.acc_c = np.sum(general_field[self.position] / self.mass[:, np.newaxis], axis=0) 
         pass
 
     def _translation(self, dt):
@@ -47,6 +47,10 @@ class RigidBody(System):
             omiga *= -1
         angle = omiga * dt
         self.rotate_with_angle(angle, self.pos_c)
+    
+    # Override
+    def momentum(self):
+        return np.sum(super().momentum(), axis=0)
 
 class Bar(System):
     def __init__(self, particles, has_mass = False, uniform_distribution = True):
