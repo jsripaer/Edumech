@@ -52,7 +52,7 @@ class Canvas(tk.Canvas):
         return self.create_rectangle(x1, y1, x2, y2, outline=color, fill=color)
     
     def square(self, x, y, size, color='black', direction=(1, 1), corner=False):
-        """Short cut of squares. Direction represents how the figure expands."""
+        """Shortcut of squares. Direction represents how the figure expands."""
         if not corner:
             x, y = self.to_corner(x, y)
         xend = x + size * direction[0]

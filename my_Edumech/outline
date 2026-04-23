@@ -1,0 +1,13 @@
+Purpose: building an Mechanics system
+
+1. GUI building:
+   ------------------------------
+   |    |                       |
+   |    |      SCREEN           |
+   |    |                       |
+   |____|_______________________|
+   |____________________________|
+
+   In priority, screen, no other ui
+   using click or durg to move objects
+

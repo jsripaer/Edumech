@@ -12,7 +12,7 @@ So I decided to make a simple tool to help me visualize the motion of systems.
 - It has to be lightweight for classroom experiments.
 - It has to be redesingable for different imitations.
 
-Sure a physics engine is not a rare thing, but most of them are too complex for teaching and some of them are not open. I don't think they fit teachers who are not experienced in programming. For most scene an AI angent can make scripts with Python. But how if I can produce an integrated environment that enables simpler scripts, more powerful imitation and physical taste logic? Look how GeoGebra changed the mathematics leraing style around the world! And I need a small project to practice Python programming. Thus I started this.
+Sure a physics engine is not a rare thing, but most of them are too complex for teaching and some of them are not open. I don't think they fit teachers who are not experienced in programming. For most scene an AI angent can make scripts with Python. But how if I can produce an integrated environment that enables simpler scripts, more powerful imitation and physical taste logic? Look how GeoGebra changed the mathematics learning style around the world! And I need a small project to practice Python programming. Thus I started this.
 
 ### TODO 
 As you see, this project is in the starting phase. Your help is welcomed!
