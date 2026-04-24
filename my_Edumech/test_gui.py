@@ -23,6 +23,7 @@ class Screen:
     widget: dict[str, tk.Widget]
 
     def register(self, widget_name: str, widget: tk.Widget) -> None:
+        """准备添加装饰器，并将所有widget构建函数全部以装饰器写，这样直接导入该类，不知道可不可行，或者直接在类里构建这些函数"""
         self.widget[widget_name] = widget
 
 def main():
@@ -44,6 +45,8 @@ def main():
         frame = ttk.Frame(master=_tk, relief='solid')
         frame_list.append(frame)
 
+    # frame_list 3: 顶栏， frame_list 2: 底栏, frame_list 1: 画布栏, frame_list 0: 左侧栏
+
     frame_list[3].configure(width=WIDTH, height=MENU_HEIGHT, borderwidth=1)
     frame_list[3].pack(side='top', fill='x')
     frame_list[2].configure(width=BOTTOM_WIDTH, height=BOTTOM_HEIGHT, borderwidth=1)
@@ -61,7 +64,9 @@ def main():
     label.pack()
     label = ttk.Label(master=frame_list[1], text='Hello World')
     label.pack()
-
+    # 构建画布
+    canvas = tk.Canvas(master=frame_list[1], relief='solid', width=CANVAS_WIDTH, height=CANVAS_HEIGHT)
+    canvas.pack(fill='both', expand=True)
 
     tk.mainloop()
 
