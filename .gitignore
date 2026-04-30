@@ -3,4 +3,4 @@ build/
 __pycache__/
 ideas/
 edumech.ico
-config/secrets.yml
+/some_try/test_gui.py
