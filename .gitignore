@@ -3,3 +3,4 @@ build/
 __pycache__/
 ideas/
 edumech.ico
+config/secrets.yml
